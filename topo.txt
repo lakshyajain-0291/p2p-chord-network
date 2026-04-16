@@ -1,0 +1,3 @@
+8
+# Optional additional lines are ignored by this implementation.
+# Format requirement: first token must be integer N.

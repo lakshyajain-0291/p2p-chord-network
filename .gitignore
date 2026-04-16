@@ -1,0 +1,34 @@
+# OMNeT++ / build outputs
+out/
+results/
+assignment_2
+*.oppstate
+*.opptrace
+*.omnetpp
+*.log
+*.tmp
+*.bak
+
+# Generated message code
+messages_m.cc
+messages_m.h
+
+# Simulation output files
+# outputfile.txt
+test.out
+
+# IDE / local workspace files
+.qtenvrc
+.settings/
+.cproject
+.project
+
+# Generic compiled artifacts
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.exe
+*.class

@@ -1,382 +1,867 @@
 # OMNeT++ Assignment 2 detailed execution log
-0 [INIT] Loaded topology file with N = 8 nodes
-0 [RING] Node 0 connected to successor 1 and predecessor 7
+0 [INIT] Loaded topology file with N = 15 nodes
+0 [RING] Node 0 connected to successor 1 and predecessor 14
 0 [RING] Node 1 connected to successor 2 and predecessor 0
 0 [RING] Node 2 connected to successor 3 and predecessor 1
 0 [RING] Node 3 connected to successor 4 and predecessor 2
 0 [RING] Node 4 connected to successor 5 and predecessor 3
 0 [RING] Node 5 connected to successor 6 and predecessor 4
 0 [RING] Node 6 connected to successor 7 and predecessor 5
-0 [RING] Node 7 connected to successor 0 and predecessor 6
+0 [RING] Node 7 connected to successor 8 and predecessor 6
+0 [RING] Node 8 connected to successor 9 and predecessor 7
+0 [RING] Node 9 connected to successor 10 and predecessor 8
+0 [RING] Node 10 connected to successor 11 and predecessor 9
+0 [RING] Node 11 connected to successor 12 and predecessor 10
+0 [RING] Node 12 connected to successor 13 and predecessor 11
+0 [RING] Node 13 connected to successor 14 and predecessor 12
+0 [RING] Node 14 connected to successor 0 and predecessor 13
 0 [RING COMPLETE] Ring topology established
 0 [CHORD] BEFORE optimization: max hops = O(N)
 0 [CHORD] Node 0 computing finger table...
 0 [CHORD] Node 0 adds link to node 1 (2^0 jump)
 0 [CHORD] Node 0 adds link to node 2 (2^1 jump)
 0 [CHORD] Node 0 adds link to node 4 (2^2 jump)
-0 [CHORD COMPLETE] Node 0 finger table: [1, 2, 4]
+0 [CHORD] Node 0 adds link to node 8 (2^3 jump)
+0 [CHORD COMPLETE] Node 0 finger table: [1, 2, 4, 8]
 0 [CHORD] Node 1 computing finger table...
 0 [CHORD] Node 1 adds link to node 2 (2^0 jump)
 0 [CHORD] Node 1 adds link to node 3 (2^1 jump)
 0 [CHORD] Node 1 adds link to node 5 (2^2 jump)
-0 [CHORD COMPLETE] Node 1 finger table: [2, 3, 5]
+0 [CHORD] Node 1 adds link to node 9 (2^3 jump)
+0 [CHORD COMPLETE] Node 1 finger table: [2, 3, 5, 9]
 0 [CHORD] Node 2 computing finger table...
 0 [CHORD] Node 2 adds link to node 3 (2^0 jump)
 0 [CHORD] Node 2 adds link to node 4 (2^1 jump)
 0 [CHORD] Node 2 adds link to node 6 (2^2 jump)
-0 [CHORD COMPLETE] Node 2 finger table: [3, 4, 6]
+0 [CHORD] Node 2 adds link to node 10 (2^3 jump)
+0 [CHORD COMPLETE] Node 2 finger table: [3, 4, 6, 10]
 0 [CHORD] Node 3 computing finger table...
 0 [CHORD] Node 3 adds link to node 4 (2^0 jump)
 0 [CHORD] Node 3 adds link to node 5 (2^1 jump)
 0 [CHORD] Node 3 adds link to node 7 (2^2 jump)
-0 [CHORD COMPLETE] Node 3 finger table: [4, 5, 7]
+0 [CHORD] Node 3 adds link to node 11 (2^3 jump)
+0 [CHORD COMPLETE] Node 3 finger table: [4, 5, 7, 11]
 0 [CHORD] Node 4 computing finger table...
 0 [CHORD] Node 4 adds link to node 5 (2^0 jump)
 0 [CHORD] Node 4 adds link to node 6 (2^1 jump)
-0 [CHORD] Node 4 adds link to node 0 (2^2 jump)
-0 [CHORD COMPLETE] Node 4 finger table: [5, 6, 0]
+0 [CHORD] Node 4 adds link to node 8 (2^2 jump)
+0 [CHORD] Node 4 adds link to node 12 (2^3 jump)
+0 [CHORD COMPLETE] Node 4 finger table: [5, 6, 8, 12]
 0 [CHORD] Node 5 computing finger table...
 0 [CHORD] Node 5 adds link to node 6 (2^0 jump)
 0 [CHORD] Node 5 adds link to node 7 (2^1 jump)
-0 [CHORD] Node 5 adds link to node 1 (2^2 jump)
-0 [CHORD COMPLETE] Node 5 finger table: [6, 7, 1]
+0 [CHORD] Node 5 adds link to node 9 (2^2 jump)
+0 [CHORD] Node 5 adds link to node 13 (2^3 jump)
+0 [CHORD COMPLETE] Node 5 finger table: [6, 7, 9, 13]
 0 [CHORD] Node 6 computing finger table...
 0 [CHORD] Node 6 adds link to node 7 (2^0 jump)
-0 [CHORD] Node 6 adds link to node 0 (2^1 jump)
-0 [CHORD] Node 6 adds link to node 2 (2^2 jump)
-0 [CHORD COMPLETE] Node 6 finger table: [7, 0, 2]
+0 [CHORD] Node 6 adds link to node 8 (2^1 jump)
+0 [CHORD] Node 6 adds link to node 10 (2^2 jump)
+0 [CHORD] Node 6 adds link to node 14 (2^3 jump)
+0 [CHORD COMPLETE] Node 6 finger table: [7, 8, 10, 14]
 0 [CHORD] Node 7 computing finger table...
-0 [CHORD] Node 7 adds link to node 0 (2^0 jump)
-0 [CHORD] Node 7 adds link to node 1 (2^1 jump)
-0 [CHORD] Node 7 adds link to node 3 (2^2 jump)
-0 [CHORD COMPLETE] Node 7 finger table: [0, 1, 3]
+0 [CHORD] Node 7 adds link to node 8 (2^0 jump)
+0 [CHORD] Node 7 adds link to node 9 (2^1 jump)
+0 [CHORD] Node 7 adds link to node 11 (2^2 jump)
+0 [CHORD] Node 7 adds link to node 0 (2^3 jump)
+0 [CHORD COMPLETE] Node 7 finger table: [8, 9, 11, 0]
+0 [CHORD] Node 8 computing finger table...
+0 [CHORD] Node 8 adds link to node 9 (2^0 jump)
+0 [CHORD] Node 8 adds link to node 10 (2^1 jump)
+0 [CHORD] Node 8 adds link to node 12 (2^2 jump)
+0 [CHORD] Node 8 adds link to node 1 (2^3 jump)
+0 [CHORD COMPLETE] Node 8 finger table: [9, 10, 12, 1]
+0 [CHORD] Node 9 computing finger table...
+0 [CHORD] Node 9 adds link to node 10 (2^0 jump)
+0 [CHORD] Node 9 adds link to node 11 (2^1 jump)
+0 [CHORD] Node 9 adds link to node 13 (2^2 jump)
+0 [CHORD] Node 9 adds link to node 2 (2^3 jump)
+0 [CHORD COMPLETE] Node 9 finger table: [10, 11, 13, 2]
+0 [CHORD] Node 10 computing finger table...
+0 [CHORD] Node 10 adds link to node 11 (2^0 jump)
+0 [CHORD] Node 10 adds link to node 12 (2^1 jump)
+0 [CHORD] Node 10 adds link to node 14 (2^2 jump)
+0 [CHORD] Node 10 adds link to node 3 (2^3 jump)
+0 [CHORD COMPLETE] Node 10 finger table: [11, 12, 14, 3]
+0 [CHORD] Node 11 computing finger table...
+0 [CHORD] Node 11 adds link to node 12 (2^0 jump)
+0 [CHORD] Node 11 adds link to node 13 (2^1 jump)
+0 [CHORD] Node 11 adds link to node 0 (2^2 jump)
+0 [CHORD] Node 11 adds link to node 4 (2^3 jump)
+0 [CHORD COMPLETE] Node 11 finger table: [12, 13, 0, 4]
+0 [CHORD] Node 12 computing finger table...
+0 [CHORD] Node 12 adds link to node 13 (2^0 jump)
+0 [CHORD] Node 12 adds link to node 14 (2^1 jump)
+0 [CHORD] Node 12 adds link to node 1 (2^2 jump)
+0 [CHORD] Node 12 adds link to node 5 (2^3 jump)
+0 [CHORD COMPLETE] Node 12 finger table: [13, 14, 1, 5]
+0 [CHORD] Node 13 computing finger table...
+0 [CHORD] Node 13 adds link to node 14 (2^0 jump)
+0 [CHORD] Node 13 adds link to node 0 (2^1 jump)
+0 [CHORD] Node 13 adds link to node 2 (2^2 jump)
+0 [CHORD] Node 13 adds link to node 6 (2^3 jump)
+0 [CHORD COMPLETE] Node 13 finger table: [14, 0, 2, 6]
+0 [CHORD] Node 14 computing finger table...
+0 [CHORD] Node 14 adds link to node 0 (2^0 jump)
+0 [CHORD] Node 14 adds link to node 1 (2^1 jump)
+0 [CHORD] Node 14 adds link to node 3 (2^2 jump)
+0 [CHORD] Node 14 adds link to node 7 (2^3 jump)
+0 [CHORD COMPLETE] Node 14 finger table: [0, 1, 3, 7]
 0 [CHORD] AFTER optimization: expected hops ~= O(log N)
-0.1 [TASK INIT] Node 4 selected as initiator
-0.1 [TASK SPLIT] Total elements = 32, subtasks = 16
+0.1 [TASK INIT] Node 12 selected as initiator
+0.1 [TASK SPLIT] Total elements = 106, subtasks = 21
 0.1 [TASK SPLIT] Subtask 0 assigned to client 0
-0.1 [ROUTE DECISION] Using finger table entry 2
-0.1 [ROUTE] Subtask 0 at Node 4 -> forwarding to Node 0 (target = 0)
+0.1 [ROUTE DECISION] Using finger table entry 1
+0.1 [ROUTE] Subtask 0 at Node 12 -> forwarding to Node 14 (target = 0)
 0.1 [TASK SPLIT] Subtask 1 assigned to client 1
 0.1 [ROUTE DECISION] Using finger table entry 2
-0.1 [ROUTE] Subtask 1 at Node 4 -> forwarding to Node 0 (target = 1)
+0.1 [ROUTE] Subtask 1 at Node 12 -> forwarding to Node 1 (target = 1)
 0.1 [TASK SPLIT] Subtask 2 assigned to client 2
 0.1 [ROUTE DECISION] Using finger table entry 2
-0.1 [ROUTE] Subtask 2 at Node 4 -> forwarding to Node 0 (target = 2)
+0.1 [ROUTE] Subtask 2 at Node 12 -> forwarding to Node 1 (target = 2)
 0.1 [TASK SPLIT] Subtask 3 assigned to client 3
 0.1 [ROUTE DECISION] Using finger table entry 2
-0.1 [ROUTE] Subtask 3 at Node 4 -> forwarding to Node 0 (target = 3)
+0.1 [ROUTE] Subtask 3 at Node 12 -> forwarding to Node 1 (target = 3)
 0.1 [TASK SPLIT] Subtask 4 assigned to client 4
-0.1 [DELIVERED] Subtask 4 reached Node 4
-0.1 [EXECUTE] Node 4 processing subtask 4
-0.1 [RESULT] Subtask 4 result = 804
-0.1 [COLLECT] Received result for subtask 4
+0.1 [ROUTE DECISION] Using finger table entry 2
+0.1 [ROUTE] Subtask 4 at Node 12 -> forwarding to Node 1 (target = 4)
 0.1 [TASK SPLIT] Subtask 5 assigned to client 5
-0.1 [ROUTE DECISION] Using finger table entry 0
-0.1 [ROUTE] Subtask 5 at Node 4 -> forwarding to Node 5 (target = 5)
+0.1 [ROUTE DECISION] Using finger table entry 3
+0.1 [ROUTE] Subtask 5 at Node 12 -> forwarding to Node 5 (target = 5)
 0.1 [TASK SPLIT] Subtask 6 assigned to client 6
-0.1 [ROUTE DECISION] Using finger table entry 1
-0.1 [ROUTE] Subtask 6 at Node 4 -> forwarding to Node 6 (target = 6)
+0.1 [ROUTE DECISION] Using finger table entry 3
+0.1 [ROUTE] Subtask 6 at Node 12 -> forwarding to Node 5 (target = 6)
 0.1 [TASK SPLIT] Subtask 7 assigned to client 7
-0.1 [ROUTE DECISION] Using finger table entry 1
-0.1 [ROUTE] Subtask 7 at Node 4 -> forwarding to Node 6 (target = 7)
-0.1 [TASK SPLIT] Subtask 8 assigned to client 0
-0.1 [ROUTE DECISION] Using finger table entry 2
-0.1 [ROUTE] Subtask 8 at Node 4 -> forwarding to Node 0 (target = 0)
-0.1 [TASK SPLIT] Subtask 9 assigned to client 1
-0.1 [ROUTE DECISION] Using finger table entry 2
-0.1 [ROUTE] Subtask 9 at Node 4 -> forwarding to Node 0 (target = 1)
-0.1 [TASK SPLIT] Subtask 10 assigned to client 2
-0.1 [ROUTE DECISION] Using finger table entry 2
-0.1 [ROUTE] Subtask 10 at Node 4 -> forwarding to Node 0 (target = 2)
-0.1 [TASK SPLIT] Subtask 11 assigned to client 3
-0.1 [ROUTE DECISION] Using finger table entry 2
-0.1 [ROUTE] Subtask 11 at Node 4 -> forwarding to Node 0 (target = 3)
-0.1 [TASK SPLIT] Subtask 12 assigned to client 4
-0.1 [DELIVERED] Subtask 12 reached Node 4
-0.1 [EXECUTE] Node 4 processing subtask 12
-0.1 [RESULT] Subtask 12 result = 845
+0.1 [ROUTE DECISION] Using finger table entry 3
+0.1 [ROUTE] Subtask 7 at Node 12 -> forwarding to Node 5 (target = 7)
+0.1 [TASK SPLIT] Subtask 8 assigned to client 8
+0.1 [ROUTE DECISION] Using finger table entry 3
+0.1 [ROUTE] Subtask 8 at Node 12 -> forwarding to Node 5 (target = 8)
+0.1 [TASK SPLIT] Subtask 9 assigned to client 9
+0.1 [ROUTE DECISION] Using finger table entry 3
+0.1 [ROUTE] Subtask 9 at Node 12 -> forwarding to Node 5 (target = 9)
+0.1 [TASK SPLIT] Subtask 10 assigned to client 10
+0.1 [ROUTE DECISION] Using finger table entry 3
+0.1 [ROUTE] Subtask 10 at Node 12 -> forwarding to Node 5 (target = 10)
+0.1 [TASK SPLIT] Subtask 11 assigned to client 11
+0.1 [ROUTE DECISION] Using finger table entry 3
+0.1 [ROUTE] Subtask 11 at Node 12 -> forwarding to Node 5 (target = 11)
+0.1 [TASK SPLIT] Subtask 12 assigned to client 12
+0.1 [DELIVERED] Subtask 12 reached Node 12
+0.1 [EXECUTE] Node 12 processing subtask 12
+0.1 [RESULT] Subtask 12 result = 932
 0.1 [COLLECT] Received result for subtask 12
-0.1 [TASK SPLIT] Subtask 13 assigned to client 5
+0.1 [TASK SPLIT] Subtask 13 assigned to client 13
 0.1 [ROUTE DECISION] Using finger table entry 0
-0.1 [ROUTE] Subtask 13 at Node 4 -> forwarding to Node 5 (target = 5)
-0.1 [TASK SPLIT] Subtask 14 assigned to client 6
+0.1 [ROUTE] Subtask 13 at Node 12 -> forwarding to Node 13 (target = 13)
+0.1 [TASK SPLIT] Subtask 14 assigned to client 14
 0.1 [ROUTE DECISION] Using finger table entry 1
-0.1 [ROUTE] Subtask 14 at Node 4 -> forwarding to Node 6 (target = 6)
-0.1 [TASK SPLIT] Subtask 15 assigned to client 7
+0.1 [ROUTE] Subtask 14 at Node 12 -> forwarding to Node 14 (target = 14)
+0.1 [TASK SPLIT] Subtask 15 assigned to client 0
 0.1 [ROUTE DECISION] Using finger table entry 1
-0.1 [ROUTE] Subtask 15 at Node 4 -> forwarding to Node 6 (target = 7)
-0.132472140514 [DELIVERED] Subtask 14 reached Node 6
-0.132472140514 [EXECUTE] Node 6 processing subtask 14
-0.132472140514 [RESULT] Subtask 14 result = 976
-0.132472140514 [RETURN] Subtask 14 result traveling back
-0.132472140514 [ROUTE BACK] Node 6 -> Node 2
-0.13666664771 [ROUTE DECISION] Using finger table entry 0
-0.13666664771 [ROUTE] Subtask 1 at Node 0 -> forwarding to Node 1 (target = 1)
-0.197681078932 [ROUTE DECISION] Using finger table entry 0
-0.197681078932 [ROUTE] Subtask 9 at Node 0 -> forwarding to Node 1 (target = 1)
-0.199985527603 [DELIVERED] Subtask 6 reached Node 6
-0.199985527603 [EXECUTE] Node 6 processing subtask 6
-0.199985527603 [RESULT] Subtask 6 result = 600
-0.199985527603 [RETURN] Subtask 6 result traveling back
-0.199985527603 [ROUTE BACK] Node 6 -> Node 2
-0.208890721293 [ROUTE DECISION] Using finger table entry 1
-0.208890721293 [ROUTE] Subtask 10 at Node 0 -> forwarding to Node 2 (target = 2)
-0.234918203177 [DELIVERED] Subtask 9 reached Node 1
-0.234918203177 [EXECUTE] Node 1 processing subtask 9
-0.234918203177 [RESULT] Subtask 9 result = 174
-0.234918203177 [RETURN] Subtask 9 result traveling back
-0.234918203177 [ROUTE BACK] Node 1 -> Node 3
-0.238987111396 [DELIVERED] Subtask 13 reached Node 5
-0.238987111396 [EXECUTE] Node 5 processing subtask 13
-0.238987111396 [RESULT] Subtask 13 result = 916
-0.238987111396 [RETURN] Subtask 13 result traveling back
-0.238987111396 [ROUTE BACK] Node 5 -> Node 1
-0.246920203802 [ROUTE DECISION] Using finger table entry 0
-0.246920203802 [ROUTE] Subtask 15 at Node 6 -> forwarding to Node 7 (target = 7)
-0.257250408046 [DELIVERED] Subtask 1 reached Node 1
-0.257250408046 [EXECUTE] Node 1 processing subtask 1
-0.257250408046 [RESULT] Subtask 1 result = 707
-0.257250408046 [RETURN] Subtask 1 result traveling back
-0.257250408046 [ROUTE BACK] Node 1 -> Node 3
-0.257849783809 [DELIVERED] Subtask 0 reached Node 0
-0.257849783809 [EXECUTE] Node 0 processing subtask 0
-0.257849783809 [RESULT] Subtask 0 result = 835
-0.257849783809 [RETURN] Subtask 0 result traveling back
-0.257849783809 [ROUTE BACK] Node 0 -> Node 4
-0.258300543374 [ROUTE DECISION] Using finger table entry 1
-0.258300543374 [ROUTE] Subtask 11 at Node 0 -> forwarding to Node 2 (target = 3)
-0.261840127129 [ROUTE DECISION] Using finger table entry 0
-0.261840127129 [ROUTE] Subtask 7 at Node 6 -> forwarding to Node 7 (target = 7)
-0.262173042975 [DELIVERED] Subtask 8 reached Node 0
-0.262173042975 [EXECUTE] Node 0 processing subtask 8
-0.262173042975 [RESULT] Subtask 8 result = 551
-0.262173042975 [RETURN] Subtask 8 result traveling back
-0.262173042975 [ROUTE BACK] Node 0 -> Node 4
-0.264057133742 [ROUTE BACK] Node 2 -> Node 4
-0.275302307599 [ROUTE DECISION] Using finger table entry 1
-0.275302307599 [ROUTE] Subtask 2 at Node 0 -> forwarding to Node 2 (target = 2)
-0.275316577703 [ROUTE DECISION] Using finger table entry 1
-0.275316577703 [ROUTE] Subtask 3 at Node 0 -> forwarding to Node 2 (target = 3)
-0.277042649023 [DELIVERED] Subtask 15 reached Node 7
-0.277042649023 [EXECUTE] Node 7 processing subtask 15
-0.277042649023 [RESULT] Subtask 15 result = 755
-0.277042649023 [RETURN] Subtask 15 result traveling back
-0.277042649023 [ROUTE BACK] Node 7 -> Node 3
-0.29593748515 [DELIVERED] Subtask 5 reached Node 5
-0.29593748515 [EXECUTE] Node 5 processing subtask 5
-0.29593748515 [RESULT] Subtask 5 result = 472
-0.29593748515 [RETURN] Subtask 5 result traveling back
-0.29593748515 [ROUTE BACK] Node 5 -> Node 1
-0.307243272592 [DELIVERED] Subtask 7 reached Node 7
-0.307243272592 [EXECUTE] Node 7 processing subtask 7
-0.307243272592 [RESULT] Subtask 7 result = 705
-0.307243272592 [RETURN] Subtask 7 result traveling back
-0.307243272592 [ROUTE BACK] Node 7 -> Node 3
-0.312086440967 [ROUTE BACK] Node 2 -> Node 4
-0.318566109543 [ROUTE DECISION] Using finger table entry 0
-0.318566109543 [ROUTE] Subtask 11 at Node 2 -> forwarding to Node 3 (target = 3)
-0.320813334216 [ROUTE BACK] Node 3 -> Node 4
-0.326461145478 [ROUTE DECISION] Using finger table entry 0
-0.326461145478 [ROUTE] Subtask 3 at Node 2 -> forwarding to Node 3 (target = 3)
-0.33162893807 [ROUTE BACK] Node 1 -> Node 3
-0.346036176859 [ROUTE BACK] Node 3 -> Node 4
-0.34813829375 [ROUTE BACK] Node 1 -> Node 3
-0.357833864128 [COLLECT] Received result for subtask 0
-0.359251558336 [COLLECT] Received result for subtask 7
-0.371970871431 [DELIVERED] Subtask 2 reached Node 2
-0.371970871431 [EXECUTE] Node 2 processing subtask 2
-0.371970871431 [RESULT] Subtask 2 result = 723
-0.371970871431 [RETURN] Subtask 2 result traveling back
-0.371970871431 [ROUTE BACK] Node 2 -> Node 4
-0.38367323175 [COLLECT] Received result for subtask 6
-0.383870001318 [ROUTE BACK] Node 3 -> Node 4
-0.38905517106 [ROUTE BACK] Node 3 -> Node 4
-0.395045099205 [ROUTE BACK] Node 3 -> Node 4
-0.39837781583 [DELIVERED] Subtask 10 reached Node 2
-0.39837781583 [EXECUTE] Node 2 processing subtask 10
-0.39837781583 [RESULT] Subtask 10 result = 849
-0.39837781583 [RETURN] Subtask 10 result traveling back
-0.39837781583 [ROUTE BACK] Node 2 -> Node 4
-0.414071587547 [COLLECT] Received result for subtask 14
-0.419277443411 [COLLECT] Received result for subtask 8
-0.43157119958 [ROUTE BACK] Node 3 -> Node 4
-0.445916854705 [DELIVERED] Subtask 11 reached Node 3
-0.445916854705 [EXECUTE] Node 3 processing subtask 11
-0.445916854705 [RESULT] Subtask 11 result = 677
-0.445916854705 [RETURN] Subtask 11 result traveling back
-0.445916854705 [ROUTE BACK] Node 3 -> Node 4
-0.452759332746 [DELIVERED] Subtask 3 reached Node 3
-0.452759332746 [EXECUTE] Node 3 processing subtask 3
-0.452759332746 [RESULT] Subtask 3 result = 754
-0.452759332746 [RETURN] Subtask 3 result traveling back
-0.452759332746 [ROUTE BACK] Node 3 -> Node 4
-0.473253636603 [COLLECT] Received result for subtask 1
-0.476684317221 [COLLECT] Received result for subtask 10
-0.490535597222 [COLLECT] Received result for subtask 15
-0.528601027651 [COLLECT] Received result for subtask 9
-0.538952925711 [COLLECT] Received result for subtask 11
-0.558053257331 [COLLECT] Received result for subtask 13
-0.561283005735 [COLLECT] Received result for subtask 2
-0.56536371088 [COLLECT] Received result for subtask 5
-0.634205562606 [COLLECT] Received result for subtask 3
-0.634205562606 [FINAL RESULT] Computed global max = 976
-0.652637127916 [GOSSIP GENERATED] Node 2 created message 0.652637127916:2:client-2
-0.652637127916 [GOSSIP FORWARD] Node 2 -> Node 1
-0.652637127916 [GOSSIP FORWARD] Node 2 -> Node 3
-0.658104811822 [GOSSIP GENERATED] Node 1 created message 0.658104811822:1:client-1
-0.658104811822 [GOSSIP FORWARD] Node 1 -> Node 0
-0.658104811822 [GOSSIP FORWARD] Node 1 -> Node 2
-0.668132904664 [GOSSIP GENERATED] Node 7 created message 0.668132904664:7:client-7
-0.668132904664 [GOSSIP FORWARD] Node 7 -> Node 0
-0.668132904664 [GOSSIP FORWARD] Node 7 -> Node 6
-0.692600808508 [GOSSIP RECEIVED] Node 0 received message from 1
-0.692600808508 [GOSSIP FORWARD] Node 0 -> Node 7
-0.702609814632 [GOSSIP RECEIVED] Node 1 received message from 2
-0.702609814632 [GOSSIP FORWARD] Node 1 -> Node 0
-0.730686040254 [GOSSIP RECEIVED] Node 3 received message from 2
-0.730686040254 [GOSSIP FORWARD] Node 3 -> Node 4
-0.735645167114 [GOSSIP GENERATED] Node 5 created message 0.735645167114:5:client-5
-0.735645167114 [GOSSIP FORWARD] Node 5 -> Node 4
-0.735645167114 [GOSSIP FORWARD] Node 5 -> Node 6
-0.737552902185 [GOSSIP GENERATED] Node 4 created message 0.737552902185:4:client-4
-0.737552902185 [GOSSIP FORWARD] Node 4 -> Node 3
-0.737552902185 [GOSSIP FORWARD] Node 4 -> Node 5
-0.738064291098 [GOSSIP RECEIVED] Node 0 received message from 7
-0.738064291098 [GOSSIP FORWARD] Node 0 -> Node 1
-0.738094864924 [GOSSIP GENERATED] Node 6 created message 0.738094864924:6:client-6
-0.738094864924 [GOSSIP FORWARD] Node 6 -> Node 5
-0.738094864924 [GOSSIP FORWARD] Node 6 -> Node 7
-0.741873929965 [GOSSIP GENERATED] Node 0 created message 0.741873929965:0:client-0
-0.741873929965 [GOSSIP FORWARD] Node 0 -> Node 1
-0.741873929965 [GOSSIP FORWARD] Node 0 -> Node 7
-0.752945997965 [GOSSIP RECEIVED] Node 4 received message from 5
-0.752945997965 [GOSSIP FORWARD] Node 4 -> Node 3
-0.767483378219 [GOSSIP RECEIVED] Node 5 received message from 6
-0.767483378219 [GOSSIP FORWARD] Node 5 -> Node 4
-0.771705855456 [GOSSIP RECEIVED] Node 7 received message from 0
-0.771705855456 [GOSSIP FORWARD] Node 7 -> Node 6
-0.774368787867 [GOSSIP RECEIVED] Node 0 received message from 1
-0.774368787867 [GOSSIP FORWARD] Node 0 -> Node 7
-0.77997883221 [GOSSIP GENERATED] Node 3 created message 0.77997883221:3:client-3
-0.77997883221 [GOSSIP FORWARD] Node 3 -> Node 2
-0.77997883221 [GOSSIP FORWARD] Node 3 -> Node 4
-0.791560514095 [GOSSIP RECEIVED] Node 1 received message from 0
-0.791560514095 [GOSSIP FORWARD] Node 1 -> Node 2
-0.793594805087 [GOSSIP RECEIVED] Node 3 received message from 4
-0.793594805087 [GOSSIP FORWARD] Node 3 -> Node 2
-0.793620731338 [GOSSIP RECEIVED] Node 6 received message from 7
-0.793620731338 [GOSSIP FORWARD] Node 6 -> Node 5
-0.810735178207 [GOSSIP RECEIVED] Node 2 received message from 1
-0.810735178207 [GOSSIP FORWARD] Node 2 -> Node 3
-0.828979454659 [GOSSIP RECEIVED] Node 6 received message from 5
-0.828979454659 [GOSSIP FORWARD] Node 6 -> Node 7
-0.83810423646 [GOSSIP RECEIVED] Node 2 received message from 3
-0.83810423646 [GOSSIP FORWARD] Node 2 -> Node 1
-0.849023427685 [GOSSIP RECEIVED] Node 4 received message from 3
-0.849023427685 [GOSSIP FORWARD] Node 4 -> Node 5
-0.850061593068 [GOSSIP RECEIVED] Node 5 received message from 6
-0.850061593068 [GOSSIP FORWARD] Node 5 -> Node 4
-0.868064972284 [GOSSIP RECEIVED] Node 3 received message from 4
-0.868064972284 [GOSSIP FORWARD] Node 3 -> Node 2
-0.868708863932 [GOSSIP RECEIVED] Node 4 received message from 3
-0.868708863932 [GOSSIP FORWARD] Node 4 -> Node 5
-0.869183676091 [GOSSIP RECEIVED] Node 7 received message from 6
-0.869183676091 [GOSSIP FORWARD] Node 7 -> Node 0
-0.872125025523 [GOSSIP RECEIVED] Node 7 received message from 6
-0.872125025523 [GOSSIP FORWARD] Node 7 -> Node 0
-0.872535116606 [GOSSIP RECEIVED] Node 7 received message from 0
-0.872535116606 [GOSSIP FORWARD] Node 7 -> Node 6
-0.879994704126 [GOSSIP RECEIVED] Node 5 received message from 4
-0.879994704126 [GOSSIP FORWARD] Node 5 -> Node 6
-0.890159560929 [GOSSIP RECEIVED] Node 2 received message from 1
-0.890159560929 [GOSSIP FORWARD] Node 2 -> Node 3
-0.893787331061 [GOSSIP RECEIVED] Node 2 received message from 3
-0.893787331061 [GOSSIP FORWARD] Node 2 -> Node 1
-0.894920350987 [GOSSIP RECEIVED] Node 7 received message from 0
-0.894920350987 [GOSSIP FORWARD] Node 7 -> Node 6
-0.905438436497 [GOSSIP RECEIVED] Node 0 received message from 7
-0.905438436497 [GOSSIP FORWARD] Node 0 -> Node 1
-0.905796436648 [GOSSIP RECEIVED] Node 6 received message from 7
-0.905796436648 [GOSSIP FORWARD] Node 6 -> Node 5
-0.912325683787 [GOSSIP RECEIVED] Node 1 received message from 2
-0.912325683787 [GOSSIP FORWARD] Node 1 -> Node 0
-0.918017048453 [GOSSIP RECEIVED] Node 1 received message from 0
-0.918017048453 [GOSSIP FORWARD] Node 1 -> Node 2
-0.919885764379 [GOSSIP RECEIVED] Node 6 received message from 7
-0.919885764379 [GOSSIP FORWARD] Node 6 -> Node 5
-0.930264652258 [GOSSIP RECEIVED] Node 1 received message from 0
-0.930264652258 [GOSSIP FORWARD] Node 1 -> Node 2
-0.934245678167 [GOSSIP RECEIVED] Node 5 received message from 6
-0.934245678167 [GOSSIP FORWARD] Node 5 -> Node 4
-0.935343930236 [GOSSIP RECEIVED] Node 5 received message from 4
-0.935343930236 [GOSSIP FORWARD] Node 5 -> Node 6
-0.938977195437 [GOSSIP RECEIVED] Node 5 received message from 4
-0.938977195437 [GOSSIP FORWARD] Node 5 -> Node 6
-0.939202098347 [GOSSIP RECEIVED] Node 3 received message from 2
-0.939202098347 [GOSSIP FORWARD] Node 3 -> Node 4
-0.95852334847 [GOSSIP RECEIVED] Node 2 received message from 1
-0.95852334847 [GOSSIP FORWARD] Node 2 -> Node 3
-0.966590295684 [GOSSIP RECEIVED] Node 4 received message from 5
-0.966590295684 [GOSSIP FORWARD] Node 4 -> Node 3
-0.970217342417 [GOSSIP RECEIVED] Node 3 received message from 2
-0.970217342417 [GOSSIP FORWARD] Node 3 -> Node 4
-0.988264534297 [GOSSIP RECEIVED] Node 4 received message from 5
-0.988264534297 [GOSSIP FORWARD] Node 4 -> Node 3
-0.990803134072 [GOSSIP RECEIVED] Node 4 received message from 3
-0.990803134072 [GOSSIP FORWARD] Node 4 -> Node 5
-1.002767594762 [GOSSIP RECEIVED] Node 2 received message from 3
-1.002767594762 [GOSSIP FORWARD] Node 2 -> Node 1
-1.029667435991 [GOSSIP SKIP] Duplicate message ignored
-1.030010667051 [GOSSIP RECEIVED] Node 0 received message from 7
-1.030010667051 [GOSSIP FORWARD] Node 0 -> Node 1
-1.038245826027 [GOSSIP RECEIVED] Node 4 received message from 3
-1.038245826027 [GOSSIP FORWARD] Node 4 -> Node 5
-1.038245826027 [TERMINATE] Node 4 received all gossip messages. Shutting down.
-1.040666441507 [GOSSIP RECEIVED] Node 0 received message from 1
-1.040666441507 [GOSSIP FORWARD] Node 0 -> Node 7
-1.043808324795 [GOSSIP RECEIVED] Node 1 received message from 0
-1.043808324795 [GOSSIP FORWARD] Node 1 -> Node 2
-1.05569150593 [GOSSIP SKIP] Duplicate message ignored
-1.057881094279 [GOSSIP RECEIVED] Node 5 received message from 6
-1.057881094279 [GOSSIP FORWARD] Node 5 -> Node 4
-1.057881094279 [TERMINATE] Node 5 received all gossip messages. Shutting down.
-1.06090906486 [GOSSIP RECEIVED] Node 6 received message from 7
-1.06090906486 [GOSSIP FORWARD] Node 6 -> Node 5
-1.065351979106 [GOSSIP RECEIVED] Node 3 received message from 2
-1.065351979106 [GOSSIP FORWARD] Node 3 -> Node 4
-1.070413203892 [GOSSIP SKIP] Duplicate message ignored
-1.086523384713 [GOSSIP SKIP] Duplicate message ignored
-1.08722658072 [GOSSIP SKIP] Duplicate message ignored
-1.093746412132 [GOSSIP SKIP] Duplicate message ignored
-1.107541647094 [GOSSIP RECEIVED] Node 2 received message from 1
-1.107541647094 [GOSSIP FORWARD] Node 2 -> Node 3
-1.107541647094 [TERMINATE] Node 2 received all gossip messages. Shutting down.
-1.11318518272 [GOSSIP SKIP] Duplicate message ignored
-1.115833954462 [GOSSIP RECEIVED] Node 6 received message from 5
-1.115833954462 [GOSSIP FORWARD] Node 6 -> Node 7
-1.128915227967 [GOSSIP SKIP] Duplicate message ignored
-1.130871228628 [GOSSIP RECEIVED] Node 6 received message from 5
-1.130871228628 [GOSSIP FORWARD] Node 6 -> Node 7
-1.130871228628 [TERMINATE] Node 6 received all gossip messages. Shutting down.
-1.134591516586 [GOSSIP RECEIVED] Node 7 received message from 0
-1.134591516586 [GOSSIP FORWARD] Node 7 -> Node 6
-1.143646428212 [GOSSIP SKIP] Duplicate message ignored
-1.153227675218 [GOSSIP RECEIVED] Node 1 received message from 2
-1.153227675218 [GOSSIP FORWARD] Node 1 -> Node 0
-1.153227675218 [TERMINATE] Node 1 received all gossip messages. Shutting down.
-1.162174902936 [GOSSIP RECEIVED] Node 3 received message from 4
-1.162174902936 [GOSSIP FORWARD] Node 3 -> Node 2
-1.162174902936 [TERMINATE] Node 3 received all gossip messages. Shutting down.
-1.163429494343 [GOSSIP RECEIVED] Node 7 received message from 6
-1.163429494343 [GOSSIP FORWARD] Node 7 -> Node 0
-1.163429494343 [TERMINATE] Node 7 received all gossip messages. Shutting down.
-1.17380828496 [GOSSIP SKIP] Duplicate message ignored
-1.217203726347 [GOSSIP SKIP] Duplicate message ignored
-1.223644478145 [GOSSIP RECEIVED] Node 0 received message from 1
-1.223644478145 [GOSSIP FORWARD] Node 0 -> Node 7
-1.223644478145 [TERMINATE] Node 0 received all gossip messages. Shutting down.
-1.252139462134 [GOSSIP SKIP] Duplicate message ignored
-1.25400257307 [GOSSIP SKIP] Duplicate message ignored
-1.275437141975 [GOSSIP SKIP] Duplicate message ignored
-1.339465322635 [GOSSIP SKIP] Duplicate message ignored
-1.40810921799 [GOSSIP SKIP] Duplicate message ignored
+0.1 [ROUTE] Subtask 15 at Node 12 -> forwarding to Node 14 (target = 0)
+0.1 [TASK SPLIT] Subtask 16 assigned to client 1
+0.1 [ROUTE DECISION] Using finger table entry 2
+0.1 [ROUTE] Subtask 16 at Node 12 -> forwarding to Node 1 (target = 1)
+0.1 [TASK SPLIT] Subtask 17 assigned to client 2
+0.1 [ROUTE DECISION] Using finger table entry 2
+0.1 [ROUTE] Subtask 17 at Node 12 -> forwarding to Node 1 (target = 2)
+0.1 [TASK SPLIT] Subtask 18 assigned to client 3
+0.1 [ROUTE DECISION] Using finger table entry 2
+0.1 [ROUTE] Subtask 18 at Node 12 -> forwarding to Node 1 (target = 3)
+0.1 [TASK SPLIT] Subtask 19 assigned to client 4
+0.1 [ROUTE DECISION] Using finger table entry 2
+0.1 [ROUTE] Subtask 19 at Node 12 -> forwarding to Node 1 (target = 4)
+0.1 [TASK SPLIT] Subtask 20 assigned to client 5
+0.1 [ROUTE DECISION] Using finger table entry 3
+0.1 [ROUTE] Subtask 20 at Node 12 -> forwarding to Node 5 (target = 5)
+0.130971276441 [ROUTE DECISION] Using finger table entry 2
+0.130971276441 [ROUTE] Subtask 10 at Node 5 -> forwarding to Node 9 (target = 10)
+0.136254760406 [ROUTE DECISION] Using finger table entry 0
+0.136254760406 [ROUTE] Subtask 15 at Node 14 -> forwarding to Node 0 (target = 0)
+0.140204221432 [ROUTE DECISION] Using finger table entry 1
+0.140204221432 [ROUTE] Subtask 8 at Node 5 -> forwarding to Node 7 (target = 8)
+0.147350647773 [ROUTE DECISION] Using finger table entry 0
+0.147350647773 [ROUTE] Subtask 17 at Node 1 -> forwarding to Node 2 (target = 2)
+0.148833372362 [DELIVERED] Subtask 15 reached Node 0
+0.148833372362 [EXECUTE] Node 0 processing subtask 15
+0.148833372362 [RESULT] Subtask 15 result = 999
+0.148833372362 [RETURN] Subtask 15 result traveling back
+0.148833372362 [ROUTE BACK] Node 0 -> Node 8
+0.15644086173 [ROUTE DECISION] Using finger table entry 0
+0.15644086173 [ROUTE] Subtask 6 at Node 5 -> forwarding to Node 6 (target = 6)
+0.15812540425 [ROUTE DECISION] Using finger table entry 0
+0.15812540425 [ROUTE] Subtask 2 at Node 1 -> forwarding to Node 2 (target = 2)
+0.168653462951 [ROUTE DECISION] Using finger table entry 0
+0.168653462951 [ROUTE] Subtask 8 at Node 7 -> forwarding to Node 8 (target = 8)
+0.170268331505 [DELIVERED] Subtask 14 reached Node 14
+0.170268331505 [EXECUTE] Node 14 processing subtask 14
+0.170268331505 [RESULT] Subtask 14 result = 617
+0.170268331505 [RETURN] Subtask 14 result traveling back
+0.170268331505 [ROUTE BACK] Node 14 -> Node 7
+0.174221447327 [ROUTE DECISION] Using finger table entry 2
+0.174221447327 [ROUTE] Subtask 9 at Node 5 -> forwarding to Node 9 (target = 9)
+0.180057781488 [ROUTE DECISION] Using finger table entry 1
+0.180057781488 [ROUTE] Subtask 19 at Node 1 -> forwarding to Node 3 (target = 4)
+0.186384100462 [DELIVERED] Subtask 2 reached Node 2
+0.186384100462 [EXECUTE] Node 2 processing subtask 2
+0.186384100462 [RESULT] Subtask 2 result = 705
+0.186384100462 [RETURN] Subtask 2 result traveling back
+0.186384100462 [ROUTE BACK] Node 2 -> Node 10
+0.188730031722 [ROUTE DECISION] Using finger table entry 1
+0.188730031722 [ROUTE] Subtask 3 at Node 1 -> forwarding to Node 3 (target = 3)
+0.198599046834 [ROUTE DECISION] Using finger table entry 1
+0.198599046834 [ROUTE] Subtask 4 at Node 1 -> forwarding to Node 3 (target = 4)
+0.200192525974 [DELIVERED] Subtask 5 reached Node 5
+0.200192525974 [EXECUTE] Node 5 processing subtask 5
+0.200192525974 [RESULT] Subtask 5 result = 976
+0.200192525974 [RETURN] Subtask 5 result traveling back
+0.200192525974 [ROUTE BACK] Node 5 -> Node 9
+0.219184838489 [ROUTE DECISION] Using finger table entry 0
+0.219184838489 [ROUTE] Subtask 4 at Node 3 -> forwarding to Node 4 (target = 4)
+0.22055156312 [DELIVERED] Subtask 1 reached Node 1
+0.22055156312 [EXECUTE] Node 1 processing subtask 1
+0.22055156312 [RESULT] Subtask 1 result = 804
+0.22055156312 [RETURN] Subtask 1 result traveling back
+0.22055156312 [ROUTE BACK] Node 1 -> Node 9
+0.22846692014 [ROUTE DECISION] Using finger table entry 1
+0.22846692014 [ROUTE] Subtask 7 at Node 5 -> forwarding to Node 7 (target = 7)
+0.234090581192 [ROUTE DECISION] Using finger table entry 0
+0.234090581192 [ROUTE] Subtask 0 at Node 14 -> forwarding to Node 0 (target = 0)
+0.234702622478 [DELIVERED] Subtask 13 reached Node 13
+0.234702622478 [EXECUTE] Node 13 processing subtask 13
+0.234702622478 [RESULT] Subtask 13 result = 901
+0.234702622478 [RETURN] Subtask 13 result traveling back
+0.234702622478 [ROUTE BACK] Node 13 -> Node 6
+0.23588010493 [DELIVERED] Subtask 20 reached Node 5
+0.23588010493 [EXECUTE] Node 5 processing subtask 20
+0.23588010493 [RESULT] Subtask 20 result = 972
+0.23588010493 [RETURN] Subtask 20 result traveling back
+0.23588010493 [ROUTE BACK] Node 5 -> Node 9
+0.238202941229 [ROUTE DECISION] Using finger table entry 2
+0.238202941229 [ROUTE] Subtask 11 at Node 5 -> forwarding to Node 9 (target = 11)
+0.242264577884 [DELIVERED] Subtask 7 reached Node 7
+0.242264577884 [EXECUTE] Node 7 processing subtask 7
+0.242264577884 [RESULT] Subtask 7 result = 984
+0.242264577884 [RETURN] Subtask 7 result traveling back
+0.242264577884 [ROUTE BACK] Node 7 -> Node 11
+0.251536261095 [DELIVERED] Subtask 0 reached Node 0
+0.251536261095 [EXECUTE] Node 0 processing subtask 0
+0.251536261095 [RESULT] Subtask 0 result = 835
+0.251536261095 [RETURN] Subtask 0 result traveling back
+0.251536261095 [ROUTE BACK] Node 0 -> Node 8
+0.257885641528 [DELIVERED] Subtask 16 reached Node 1
+0.257885641528 [EXECUTE] Node 1 processing subtask 16
+0.257885641528 [RESULT] Subtask 16 result = 937
+0.257885641528 [RETURN] Subtask 16 result traveling back
+0.257885641528 [ROUTE BACK] Node 1 -> Node 9
+0.275101925156 [ROUTE BACK] Node 11 -> Node 12
+0.275691405493 [DELIVERED] Subtask 17 reached Node 2
+0.275691405493 [EXECUTE] Node 2 processing subtask 17
+0.275691405493 [RESULT] Subtask 17 result = 896
+0.275691405493 [RETURN] Subtask 17 result traveling back
+0.275691405493 [ROUTE BACK] Node 2 -> Node 10
+0.279101509168 [ROUTE DECISION] Using finger table entry 0
+0.279101509168 [ROUTE] Subtask 19 at Node 3 -> forwarding to Node 4 (target = 4)
+0.290418499766 [ROUTE DECISION] Using finger table entry 1
+0.290418499766 [ROUTE] Subtask 18 at Node 1 -> forwarding to Node 3 (target = 3)
+0.293212731098 [ROUTE BACK] Node 10 -> Node 12
+0.29443619163 [DELIVERED] Subtask 6 reached Node 6
+0.29443619163 [EXECUTE] Node 6 processing subtask 6
+0.29443619163 [RESULT] Subtask 6 result = 850
+0.29443619163 [RETURN] Subtask 6 result traveling back
+0.29443619163 [ROUTE BACK] Node 6 -> Node 10
+0.296959990314 [ROUTE DECISION] Using finger table entry 0
+0.296959990314 [ROUTE] Subtask 10 at Node 9 -> forwarding to Node 10 (target = 10)
+0.299613427229 [ROUTE BACK] Node 9 -> Node 11
+0.308249671208 [ROUTE BACK] Node 10 -> Node 12
+0.31490508913 [DELIVERED] Subtask 4 reached Node 4
+0.31490508913 [EXECUTE] Node 4 processing subtask 4
+0.31490508913 [RESULT] Subtask 4 result = 849
+0.31490508913 [RETURN] Subtask 4 result traveling back
+0.31490508913 [ROUTE BACK] Node 4 -> Node 12
+0.318042904629 [ROUTE BACK] Node 8 -> Node 12
+0.321801452423 [ROUTE BACK] Node 11 -> Node 12
+0.324152279394 [ROUTE BACK] Node 9 -> Node 11
+0.325113174397 [ROUTE BACK] Node 9 -> Node 11
+0.328627697557 [ROUTE BACK] Node 6 -> Node 10
+0.329830710201 [ROUTE BACK] Node 8 -> Node 12
+0.351078206352 [DELIVERED] Subtask 9 reached Node 9
+0.351078206352 [EXECUTE] Node 9 processing subtask 9
+0.351078206352 [RESULT] Subtask 9 result = 961
+0.351078206352 [RETURN] Subtask 9 result traveling back
+0.351078206352 [ROUTE BACK] Node 9 -> Node 11
+0.35944587651 [COLLECT] Received result for subtask 17
+0.360835302693 [DELIVERED] Subtask 18 reached Node 3
+0.360835302693 [EXECUTE] Node 3 processing subtask 18
+0.360835302693 [RESULT] Subtask 18 result = 908
+0.360835302693 [RETURN] Subtask 18 result traveling back
+0.360835302693 [ROUTE BACK] Node 3 -> Node 11
+0.363323012751 [DELIVERED] Subtask 8 reached Node 8
+0.363323012751 [EXECUTE] Node 8 processing subtask 8
+0.363323012751 [RESULT] Subtask 8 result = 910
+0.363323012751 [RETURN] Subtask 8 result traveling back
+0.363323012751 [ROUTE BACK] Node 8 -> Node 12
+0.365795629897 [ROUTE BACK] Node 7 -> Node 11
+0.371011643576 [ROUTE BACK] Node 9 -> Node 11
+0.376471697041 [COLLECT] Received result for subtask 7
+0.383146159421 [ROUTE BACK] Node 10 -> Node 12
+0.384314638974 [DELIVERED] Subtask 3 reached Node 3
+0.384314638974 [EXECUTE] Node 3 processing subtask 3
+0.384314638974 [RESULT] Subtask 3 result = 600
+0.384314638974 [RETURN] Subtask 3 result traveling back
+0.384314638974 [ROUTE BACK] Node 3 -> Node 11
+0.385537177707 [ROUTE BACK] Node 11 -> Node 12
+0.388683998831 [ROUTE BACK] Node 11 -> Node 12
+0.396803016037 [ROUTE BACK] Node 11 -> Node 12
+0.400461772163 [COLLECT] Received result for subtask 18
+0.419947134557 [DELIVERED] Subtask 19 reached Node 4
+0.419947134557 [EXECUTE] Node 4 processing subtask 19
+0.419947134557 [RESULT] Subtask 19 result = 938
+0.419947134557 [RETURN] Subtask 19 result traveling back
+0.419947134557 [ROUTE BACK] Node 4 -> Node 12
+0.43432442002 [ROUTE DECISION] Using finger table entry 1
+0.43432442002 [ROUTE] Subtask 11 at Node 9 -> forwarding to Node 11 (target = 11)
+0.435331800139 [ROUTE BACK] Node 10 -> Node 12
+0.435428789101 [COLLECT] Received result for subtask 15
+0.439247840256 [COLLECT] Received result for subtask 0
+0.43945572763 [COLLECT] Received result for subtask 20
+0.44708116614 [ROUTE BACK] Node 11 -> Node 12
+0.456065279146 [COLLECT] Received result for subtask 5
+0.456474791806 [COLLECT] Received result for subtask 4
+0.469366013801 [DELIVERED] Subtask 11 reached Node 11
+0.469366013801 [EXECUTE] Node 11 processing subtask 11
+0.469366013801 [RESULT] Subtask 11 result = 882
+0.469366013801 [RETURN] Subtask 11 result traveling back
+0.469366013801 [ROUTE BACK] Node 11 -> Node 12
+0.470503150797 [COLLECT] Received result for subtask 2
+0.481424730159 [DELIVERED] Subtask 10 reached Node 10
+0.481424730159 [EXECUTE] Node 10 processing subtask 10
+0.481424730159 [RESULT] Subtask 10 result = 714
+0.481424730159 [RETURN] Subtask 10 result traveling back
+0.481424730159 [ROUTE BACK] Node 10 -> Node 12
+0.485225463979 [ROUTE BACK] Node 11 -> Node 12
+0.498521766551 [ROUTE BACK] Node 11 -> Node 12
+0.533610987524 [COLLECT] Received result for subtask 1
+0.535255568102 [ROUTE BACK] Node 11 -> Node 12
+0.54332812561 [COLLECT] Received result for subtask 16
+0.545524195199 [COLLECT] Received result for subtask 14
+0.546411887444 [COLLECT] Received result for subtask 10
+0.548342959031 [COLLECT] Received result for subtask 8
+0.568294886468 [COLLECT] Received result for subtask 13
+0.56971243701 [COLLECT] Received result for subtask 6
+0.589992129596 [COLLECT] Received result for subtask 19
+0.593183333731 [COLLECT] Received result for subtask 3
+0.620841510915 [COLLECT] Received result for subtask 9
+0.639229377012 [COLLECT] Received result for subtask 11
+0.639229377012 [FINAL RESULT] Computed global max = 999
+0.649886744504 [GOSSIP GENERATED] Node 6 created message 0.649886744504:6:client-6
+0.649886744504 [GOSSIP FORWARD] Node 6 -> Node 5
+0.649886744504 [GOSSIP FORWARD] Node 6 -> Node 7
+0.652044434089 [GOSSIP GENERATED] Node 2 created message 0.652044434089:2:client-2
+0.652044434089 [GOSSIP FORWARD] Node 2 -> Node 1
+0.652044434089 [GOSSIP FORWARD] Node 2 -> Node 3
+0.669731223869 [GOSSIP GENERATED] Node 7 created message 0.669731223869:7:client-7
+0.669731223869 [GOSSIP FORWARD] Node 7 -> Node 6
+0.669731223869 [GOSSIP FORWARD] Node 7 -> Node 8
+0.672321041494 [GOSSIP GENERATED] Node 3 created message 0.672321041494:3:client-3
+0.672321041494 [GOSSIP FORWARD] Node 3 -> Node 2
+0.672321041494 [GOSSIP FORWARD] Node 3 -> Node 4
+0.687030492623 [GOSSIP GENERATED] Node 10 created message 0.687030492623:10:client-10
+0.687030492623 [GOSSIP FORWARD] Node 10 -> Node 9
+0.687030492623 [GOSSIP FORWARD] Node 10 -> Node 11
+0.689616077554 [GOSSIP GENERATED] Node 13 created message 0.689616077554:13:client-13
+0.689616077554 [GOSSIP FORWARD] Node 13 -> Node 12
+0.689616077554 [GOSSIP FORWARD] Node 13 -> Node 14
+0.701002510416 [GOSSIP GENERATED] Node 5 created message 0.701002510416:5:client-5
+0.701002510416 [GOSSIP FORWARD] Node 5 -> Node 4
+0.701002510416 [GOSSIP FORWARD] Node 5 -> Node 6
+0.707149841056 [GOSSIP RECEIVED] Node 7 received message from 6
+0.707149841056 [GOSSIP FORWARD] Node 7 -> Node 8
+0.726624384795 [GOSSIP GENERATED] Node 1 created message 0.726624384795:1:client-1
+0.726624384795 [GOSSIP FORWARD] Node 1 -> Node 0
+0.726624384795 [GOSSIP FORWARD] Node 1 -> Node 2
+0.728975953625 [GOSSIP GENERATED] Node 9 created message 0.728975953625:9:client-9
+0.728975953625 [GOSSIP FORWARD] Node 9 -> Node 8
+0.728975953625 [GOSSIP FORWARD] Node 9 -> Node 10
+0.731341187635 [GOSSIP GENERATED] Node 0 created message 0.731341187635:0:client-0
+0.731341187635 [GOSSIP FORWARD] Node 0 -> Node 1
+0.731341187635 [GOSSIP FORWARD] Node 0 -> Node 14
+0.739416002447 [GOSSIP RECEIVED] Node 11 received message from 10
+0.739416002447 [GOSSIP FORWARD] Node 11 -> Node 12
+0.742211476636 [GOSSIP RECEIVED] Node 5 received message from 6
+0.742211476636 [GOSSIP FORWARD] Node 5 -> Node 4
+0.744123692515 [GOSSIP GENERATED] Node 8 created message 0.744123692515:8:client-8
+0.744123692515 [GOSSIP FORWARD] Node 8 -> Node 7
+0.744123692515 [GOSSIP FORWARD] Node 8 -> Node 9
+0.747752596324 [GOSSIP GENERATED] Node 11 created message 0.747752596324:11:client-11
+0.747752596324 [GOSSIP FORWARD] Node 11 -> Node 10
+0.747752596324 [GOSSIP FORWARD] Node 11 -> Node 12
+0.752156539873 [GOSSIP GENERATED] Node 12 created message 0.752156539873:12:client-12
+0.752156539873 [GOSSIP FORWARD] Node 12 -> Node 11
+0.752156539873 [GOSSIP FORWARD] Node 12 -> Node 13
+0.754989896733 [GOSSIP RECEIVED] Node 6 received message from 7
+0.754989896733 [GOSSIP FORWARD] Node 6 -> Node 5
+0.761054316517 [GOSSIP RECEIVED] Node 10 received message from 9
+0.761054316517 [GOSSIP FORWARD] Node 10 -> Node 11
+0.765280980977 [GOSSIP GENERATED] Node 4 created message 0.765280980977:4:client-4
+0.765280980977 [GOSSIP FORWARD] Node 4 -> Node 3
+0.765280980977 [GOSSIP FORWARD] Node 4 -> Node 5
+0.771514327908 [GOSSIP RECEIVED] Node 3 received message from 2
+0.771514327908 [GOSSIP FORWARD] Node 3 -> Node 4
+0.7839357733 [GOSSIP GENERATED] Node 14 created message 0.7839357733:14:client-14
+0.7839357733 [GOSSIP FORWARD] Node 14 -> Node 0
+0.7839357733 [GOSSIP FORWARD] Node 14 -> Node 13
+0.791048902778 [GOSSIP RECEIVED] Node 4 received message from 3
+0.791048902778 [GOSSIP FORWARD] Node 4 -> Node 5
+0.792219189896 [GOSSIP RECEIVED] Node 8 received message from 7
+0.792219189896 [GOSSIP FORWARD] Node 8 -> Node 9
+0.795956332337 [GOSSIP RECEIVED] Node 6 received message from 5
+0.795956332337 [GOSSIP FORWARD] Node 6 -> Node 7
+0.79785420845 [GOSSIP RECEIVED] Node 1 received message from 0
+0.79785420845 [GOSSIP FORWARD] Node 1 -> Node 2
+0.802497410119 [GOSSIP RECEIVED] Node 8 received message from 7
+0.802497410119 [GOSSIP FORWARD] Node 8 -> Node 9
+0.805213888583 [GOSSIP RECEIVED] Node 12 received message from 11
+0.805213888583 [GOSSIP FORWARD] Node 12 -> Node 13
+0.805704705462 [GOSSIP RECEIVED] Node 1 received message from 2
+0.805704705462 [GOSSIP FORWARD] Node 1 -> Node 0
+0.818425497853 [GOSSIP RECEIVED] Node 9 received message from 10
+0.818425497853 [GOSSIP FORWARD] Node 9 -> Node 8
+0.821668022977 [GOSSIP RECEIVED] Node 13 received message from 12
+0.821668022977 [GOSSIP FORWARD] Node 13 -> Node 14
+0.829459782895 [GOSSIP RECEIVED] Node 7 received message from 8
+0.829459782895 [GOSSIP FORWARD] Node 7 -> Node 6
+0.830457303584 [GOSSIP RECEIVED] Node 4 received message from 5
+0.830457303584 [GOSSIP FORWARD] Node 4 -> Node 3
+0.840213069264 [GOSSIP RECEIVED] Node 4 received message from 5
+0.840213069264 [GOSSIP FORWARD] Node 4 -> Node 3
+0.843106491014 [GOSSIP RECEIVED] Node 6 received message from 7
+0.843106491014 [GOSSIP FORWARD] Node 6 -> Node 5
+0.849757606732 [GOSSIP RECEIVED] Node 7 received message from 6
+0.849757606732 [GOSSIP FORWARD] Node 7 -> Node 8
+0.852568335461 [GOSSIP RECEIVED] Node 2 received message from 3
+0.852568335461 [GOSSIP FORWARD] Node 2 -> Node 1
+0.869011419411 [GOSSIP RECEIVED] Node 12 received message from 13
+0.869011419411 [GOSSIP FORWARD] Node 12 -> Node 11
+0.871877016346 [GOSSIP RECEIVED] Node 8 received message from 9
+0.871877016346 [GOSSIP FORWARD] Node 8 -> Node 7
+0.872598386292 [GOSSIP RECEIVED] Node 11 received message from 12
+0.872598386292 [GOSSIP FORWARD] Node 11 -> Node 10
+0.88063838931 [GOSSIP RECEIVED] Node 14 received message from 13
+0.88063838931 [GOSSIP FORWARD] Node 14 -> Node 0
+0.882457117182 [GOSSIP RECEIVED] Node 9 received message from 8
+0.882457117182 [GOSSIP FORWARD] Node 9 -> Node 10
+0.887075691132 [GOSSIP RECEIVED] Node 14 received message from 0
+0.887075691132 [GOSSIP FORWARD] Node 14 -> Node 13
+0.887089346821 [GOSSIP RECEIVED] Node 5 received message from 4
+0.887089346821 [GOSSIP FORWARD] Node 5 -> Node 6
+0.887522575628 [GOSSIP RECEIVED] Node 9 received message from 8
+0.887522575628 [GOSSIP FORWARD] Node 9 -> Node 10
+0.889187406084 [GOSSIP RECEIVED] Node 13 received message from 14
+0.889187406084 [GOSSIP FORWARD] Node 13 -> Node 12
+0.895746346933 [GOSSIP RECEIVED] Node 13 received message from 12
+0.895746346933 [GOSSIP FORWARD] Node 13 -> Node 14
+0.897442031356 [GOSSIP RECEIVED] Node 0 received message from 1
+0.897442031356 [GOSSIP FORWARD] Node 0 -> Node 14
+0.902358090598 [GOSSIP RECEIVED] Node 5 received message from 4
+0.902358090598 [GOSSIP FORWARD] Node 5 -> Node 6
+0.904037588183 [GOSSIP RECEIVED] Node 12 received message from 11
+0.904037588183 [GOSSIP FORWARD] Node 12 -> Node 13
+0.906861983365 [GOSSIP RECEIVED] Node 3 received message from 4
+0.906861983365 [GOSSIP FORWARD] Node 3 -> Node 2
+0.907512284347 [GOSSIP RECEIVED] Node 3 received message from 4
+0.907512284347 [GOSSIP FORWARD] Node 3 -> Node 2
+0.917066614021 [GOSSIP RECEIVED] Node 10 received message from 9
+0.917066614021 [GOSSIP FORWARD] Node 10 -> Node 11
+0.917286626189 [GOSSIP RECEIVED] Node 1 received message from 2
+0.917286626189 [GOSSIP FORWARD] Node 1 -> Node 0
+0.919272771989 [GOSSIP RECEIVED] Node 0 received message from 14
+0.919272771989 [GOSSIP FORWARD] Node 0 -> Node 1
+0.919312641379 [GOSSIP RECEIVED] Node 4 received message from 3
+0.919312641379 [GOSSIP FORWARD] Node 4 -> Node 5
+0.921892852072 [GOSSIP RECEIVED] Node 14 received message from 13
+0.921892852072 [GOSSIP FORWARD] Node 14 -> Node 0
+0.922552860337 [GOSSIP RECEIVED] Node 2 received message from 1
+0.922552860337 [GOSSIP FORWARD] Node 2 -> Node 3
+0.922829419851 [GOSSIP RECEIVED] Node 6 received message from 5
+0.922829419851 [GOSSIP FORWARD] Node 6 -> Node 7
+0.923297385389 [GOSSIP RECEIVED] Node 14 received message from 13
+0.923297385389 [GOSSIP FORWARD] Node 14 -> Node 0
+0.925162204483 [GOSSIP RECEIVED] Node 10 received message from 11
+0.925162204483 [GOSSIP FORWARD] Node 10 -> Node 9
+0.929782419381 [GOSSIP RECEIVED] Node 3 received message from 4
+0.929782419381 [GOSSIP FORWARD] Node 3 -> Node 2
+0.930212345789 [GOSSIP RECEIVED] Node 2 received message from 1
+0.930212345789 [GOSSIP FORWARD] Node 2 -> Node 3
+0.932519615048 [GOSSIP RECEIVED] Node 5 received message from 6
+0.932519615048 [GOSSIP FORWARD] Node 5 -> Node 4
+0.933278332053 [GOSSIP RECEIVED] Node 0 received message from 1
+0.933278332053 [GOSSIP FORWARD] Node 0 -> Node 14
+0.933455381834 [GOSSIP RECEIVED] Node 11 received message from 10
+0.933455381834 [GOSSIP FORWARD] Node 11 -> Node 12
+0.9341261653 [GOSSIP RECEIVED] Node 11 received message from 12
+0.9341261653 [GOSSIP FORWARD] Node 11 -> Node 10
+0.943640209059 [GOSSIP RECEIVED] Node 8 received message from 9
+0.943640209059 [GOSSIP FORWARD] Node 8 -> Node 7
+0.954483398055 [GOSSIP RECEIVED] Node 11 received message from 10
+0.954483398055 [GOSSIP FORWARD] Node 11 -> Node 12
+0.954734839289 [GOSSIP RECEIVED] Node 7 received message from 8
+0.954734839289 [GOSSIP FORWARD] Node 7 -> Node 6
+0.955861048371 [GOSSIP RECEIVED] Node 12 received message from 13
+0.955861048371 [GOSSIP FORWARD] Node 12 -> Node 11
+0.958691731845 [GOSSIP RECEIVED] Node 3 received message from 2
+0.958691731845 [GOSSIP FORWARD] Node 3 -> Node 4
+0.962002346031 [GOSSIP RECEIVED] Node 9 received message from 10
+0.962002346031 [GOSSIP FORWARD] Node 9 -> Node 8
+0.973923169914 [GOSSIP RECEIVED] Node 10 received message from 9
+0.973923169914 [GOSSIP FORWARD] Node 10 -> Node 11
+0.974869329563 [GOSSIP RECEIVED] Node 7 received message from 6
+0.974869329563 [GOSSIP FORWARD] Node 7 -> Node 8
+0.97962695684 [GOSSIP RECEIVED] Node 6 received message from 5
+0.97962695684 [GOSSIP FORWARD] Node 6 -> Node 7
+0.98387508145 [GOSSIP RECEIVED] Node 9 received message from 8
+0.98387508145 [GOSSIP FORWARD] Node 9 -> Node 10
+0.985190579023 [GOSSIP RECEIVED] Node 8 received message from 7
+0.985190579023 [GOSSIP FORWARD] Node 8 -> Node 9
+0.987734840293 [GOSSIP RECEIVED] Node 4 received message from 3
+0.987734840293 [GOSSIP FORWARD] Node 4 -> Node 5
+0.989160652384 [GOSSIP RECEIVED] Node 5 received message from 6
+0.989160652384 [GOSSIP FORWARD] Node 5 -> Node 4
+0.990920472147 [GOSSIP RECEIVED] Node 8 received message from 9
+0.990920472147 [GOSSIP FORWARD] Node 8 -> Node 7
+0.992882328384 [GOSSIP RECEIVED] Node 0 received message from 14
+0.992882328384 [GOSSIP FORWARD] Node 0 -> Node 1
+0.993590941727 [GOSSIP RECEIVED] Node 10 received message from 11
+0.993590941727 [GOSSIP FORWARD] Node 10 -> Node 9
+1.000021317405 [GOSSIP RECEIVED] Node 10 received message from 11
+1.000021317405 [GOSSIP FORWARD] Node 10 -> Node 9
+1.009619174995 [GOSSIP RECEIVED] Node 2 received message from 3
+1.009619174995 [GOSSIP FORWARD] Node 2 -> Node 1
+1.010727224778 [GOSSIP RECEIVED] Node 9 received message from 10
+1.010727224778 [GOSSIP FORWARD] Node 9 -> Node 8
+1.014522362889 [GOSSIP RECEIVED] Node 3 received message from 2
+1.014522362889 [GOSSIP FORWARD] Node 3 -> Node 4
+1.015735364552 [GOSSIP RECEIVED] Node 14 received message from 0
+1.015735364552 [GOSSIP FORWARD] Node 14 -> Node 13
+1.021707071832 [GOSSIP RECEIVED] Node 2 received message from 3
+1.021707071832 [GOSSIP FORWARD] Node 2 -> Node 1
+1.025333949721 [GOSSIP RECEIVED] Node 4 received message from 5
+1.025333949721 [GOSSIP FORWARD] Node 4 -> Node 3
+1.026303413145 [GOSSIP RECEIVED] Node 13 received message from 12
+1.026303413145 [GOSSIP FORWARD] Node 13 -> Node 14
+1.026634082952 [GOSSIP RECEIVED] Node 2 received message from 3
+1.026634082952 [GOSSIP FORWARD] Node 2 -> Node 1
+1.027555830271 [GOSSIP RECEIVED] Node 4 received message from 5
+1.027555830271 [GOSSIP FORWARD] Node 4 -> Node 3
+1.03298065816 [GOSSIP RECEIVED] Node 0 received message from 14
+1.03298065816 [GOSSIP FORWARD] Node 0 -> Node 1
+1.040894974362 [GOSSIP RECEIVED] Node 9 received message from 10
+1.040894974362 [GOSSIP FORWARD] Node 9 -> Node 8
+1.049261161208 [GOSSIP RECEIVED] Node 13 received message from 14
+1.049261161208 [GOSSIP FORWARD] Node 13 -> Node 12
+1.050967021371 [GOSSIP RECEIVED] Node 11 received message from 12
+1.050967021371 [GOSSIP FORWARD] Node 11 -> Node 10
+1.051394781121 [GOSSIP RECEIVED] Node 0 received message from 1
+1.051394781121 [GOSSIP FORWARD] Node 0 -> Node 14
+1.051808545065 [GOSSIP RECEIVED] Node 8 received message from 7
+1.051808545065 [GOSSIP FORWARD] Node 8 -> Node 9
+1.053212263508 [GOSSIP RECEIVED] Node 5 received message from 4
+1.053212263508 [GOSSIP FORWARD] Node 5 -> Node 6
+1.056223391299 [GOSSIP RECEIVED] Node 4 received message from 3
+1.056223391299 [GOSSIP FORWARD] Node 4 -> Node 5
+1.063981607447 [GOSSIP RECEIVED] Node 13 received message from 14
+1.063981607447 [GOSSIP FORWARD] Node 13 -> Node 12
+1.066517676341 [GOSSIP RECEIVED] Node 12 received message from 11
+1.066517676341 [GOSSIP FORWARD] Node 12 -> Node 13
+1.067279274783 [GOSSIP RECEIVED] Node 10 received message from 11
+1.067279274783 [GOSSIP FORWARD] Node 10 -> Node 9
+1.074536509265 [GOSSIP RECEIVED] Node 14 received message from 0
+1.074536509265 [GOSSIP FORWARD] Node 14 -> Node 13
+1.077489765162 [GOSSIP RECEIVED] Node 8 received message from 9
+1.077489765162 [GOSSIP FORWARD] Node 8 -> Node 7
+1.083032424067 [GOSSIP RECEIVED] Node 10 received message from 9
+1.083032424067 [GOSSIP FORWARD] Node 10 -> Node 11
+1.094148250695 [GOSSIP RECEIVED] Node 13 received message from 14
+1.094148250695 [GOSSIP FORWARD] Node 13 -> Node 12
+1.098473670545 [GOSSIP RECEIVED] Node 6 received message from 7
+1.098473670545 [GOSSIP FORWARD] Node 6 -> Node 5
+1.103641239064 [GOSSIP RECEIVED] Node 0 received message from 14
+1.103641239064 [GOSSIP FORWARD] Node 0 -> Node 1
+1.1068170675 [GOSSIP RECEIVED] Node 7 received message from 8
+1.1068170675 [GOSSIP FORWARD] Node 7 -> Node 6
+1.111632984741 [GOSSIP RECEIVED] Node 5 received message from 6
+1.111632984741 [GOSSIP FORWARD] Node 5 -> Node 4
+1.112920819892 [GOSSIP RECEIVED] Node 12 received message from 11
+1.112920819892 [GOSSIP FORWARD] Node 12 -> Node 13
+1.113375507527 [GOSSIP RECEIVED] Node 1 received message from 0
+1.113375507527 [GOSSIP FORWARD] Node 1 -> Node 2
+1.115721207908 [GOSSIP RECEIVED] Node 3 received message from 4
+1.115721207908 [GOSSIP FORWARD] Node 3 -> Node 2
+1.116199110548 [GOSSIP RECEIVED] Node 1 received message from 2
+1.116199110548 [GOSSIP FORWARD] Node 1 -> Node 0
+1.123858660228 [GOSSIP RECEIVED] Node 4 received message from 5
+1.123858660228 [GOSSIP FORWARD] Node 4 -> Node 3
+1.125332803532 [GOSSIP RECEIVED] Node 7 received message from 6
+1.125332803532 [GOSSIP FORWARD] Node 7 -> Node 8
+1.130246356782 [GOSSIP RECEIVED] Node 14 received message from 0
+1.130246356782 [GOSSIP FORWARD] Node 14 -> Node 13
+1.136625987767 [GOSSIP RECEIVED] Node 12 received message from 13
+1.136625987767 [GOSSIP FORWARD] Node 12 -> Node 11
+1.137148634323 [GOSSIP RECEIVED] Node 5 received message from 4
+1.137148634323 [GOSSIP FORWARD] Node 5 -> Node 6
+1.137683542596 [GOSSIP RECEIVED] Node 8 received message from 9
+1.137683542596 [GOSSIP FORWARD] Node 8 -> Node 7
+1.151109799582 [GOSSIP RECEIVED] Node 1 received message from 0
+1.151109799582 [GOSSIP FORWARD] Node 1 -> Node 2
+1.156331996198 [GOSSIP RECEIVED] Node 13 received message from 12
+1.156331996198 [GOSSIP FORWARD] Node 13 -> Node 14
+1.157551464962 [GOSSIP RECEIVED] Node 5 received message from 4
+1.157551464962 [GOSSIP FORWARD] Node 5 -> Node 6
+1.158007759945 [GOSSIP RECEIVED] Node 7 received message from 8
+1.158007759945 [GOSSIP FORWARD] Node 7 -> Node 6
+1.158624866381 [GOSSIP RECEIVED] Node 11 received message from 10
+1.158624866381 [GOSSIP FORWARD] Node 11 -> Node 12
+1.160154716694 [GOSSIP RECEIVED] Node 12 received message from 13
+1.160154716694 [GOSSIP FORWARD] Node 12 -> Node 11
+1.160658112405 [GOSSIP RECEIVED] Node 6 received message from 7
+1.160658112405 [GOSSIP FORWARD] Node 6 -> Node 5
+1.162476683009 [GOSSIP RECEIVED] Node 11 received message from 10
+1.162476683009 [GOSSIP FORWARD] Node 11 -> Node 12
+1.167826279894 [GOSSIP RECEIVED] Node 1 received message from 0
+1.167826279894 [GOSSIP FORWARD] Node 1 -> Node 2
+1.167942442262 [GOSSIP RECEIVED] Node 8 received message from 7
+1.167942442262 [GOSSIP FORWARD] Node 8 -> Node 9
+1.171526900827 [GOSSIP RECEIVED] Node 6 received message from 7
+1.171526900827 [GOSSIP FORWARD] Node 6 -> Node 5
+1.172803543557 [GOSSIP RECEIVED] Node 7 received message from 8
+1.172803543557 [GOSSIP FORWARD] Node 7 -> Node 6
+1.179726765286 [GOSSIP RECEIVED] Node 1 received message from 2
+1.179726765286 [GOSSIP FORWARD] Node 1 -> Node 0
+1.184971509567 [GOSSIP RECEIVED] Node 9 received message from 8
+1.184971509567 [GOSSIP FORWARD] Node 9 -> Node 10
+1.190024685412 [GOSSIP RECEIVED] Node 1 received message from 2
+1.190024685412 [GOSSIP FORWARD] Node 1 -> Node 0
+1.191771338751 [GOSSIP RECEIVED] Node 2 received message from 1
+1.191771338751 [GOSSIP FORWARD] Node 2 -> Node 3
+1.195723730275 [GOSSIP RECEIVED] Node 6 received message from 5
+1.195723730275 [GOSSIP FORWARD] Node 6 -> Node 7
+1.196455512908 [GOSSIP RECEIVED] Node 3 received message from 4
+1.196455512908 [GOSSIP FORWARD] Node 3 -> Node 2
+1.200640738786 [GOSSIP RECEIVED] Node 14 received message from 13
+1.200640738786 [GOSSIP FORWARD] Node 14 -> Node 0
+1.201112319007 [GOSSIP RECEIVED] Node 12 received message from 11
+1.201112319007 [GOSSIP FORWARD] Node 12 -> Node 13
+1.201654615882 [GOSSIP RECEIVED] Node 6 received message from 5
+1.201654615882 [GOSSIP FORWARD] Node 6 -> Node 7
+1.204331336028 [GOSSIP RECEIVED] Node 14 received message from 13
+1.204331336028 [GOSSIP FORWARD] Node 14 -> Node 0
+1.204733081828 [GOSSIP RECEIVED] Node 13 received message from 14
+1.204733081828 [GOSSIP FORWARD] Node 13 -> Node 12
+1.207820734297 [GOSSIP RECEIVED] Node 3 received message from 2
+1.207820734297 [GOSSIP FORWARD] Node 3 -> Node 4
+1.214469839761 [GOSSIP RECEIVED] Node 9 received message from 10
+1.214469839761 [GOSSIP FORWARD] Node 9 -> Node 8
+1.215022372724 [GOSSIP RECEIVED] Node 12 received message from 11
+1.215022372724 [GOSSIP FORWARD] Node 12 -> Node 13
+1.221224927043 [GOSSIP RECEIVED] Node 7 received message from 6
+1.221224927043 [GOSSIP FORWARD] Node 7 -> Node 8
+1.225516971708 [GOSSIP RECEIVED] Node 2 received message from 1
+1.225516971708 [GOSSIP FORWARD] Node 2 -> Node 3
+1.237747402643 [GOSSIP RECEIVED] Node 2 received message from 3
+1.237747402643 [GOSSIP FORWARD] Node 2 -> Node 1
+1.240162933317 [GOSSIP RECEIVED] Node 6 received message from 5
+1.240162933317 [GOSSIP FORWARD] Node 6 -> Node 7
+1.243559261187 [GOSSIP RECEIVED] Node 9 received message from 8
+1.243559261187 [GOSSIP FORWARD] Node 9 -> Node 10
+1.245622942341 [GOSSIP RECEIVED] Node 11 received message from 12
+1.245622942341 [GOSSIP FORWARD] Node 11 -> Node 10
+1.248497786843 [GOSSIP RECEIVED] Node 9 received message from 8
+1.248497786843 [GOSSIP FORWARD] Node 9 -> Node 10
+1.252102407102 [GOSSIP RECEIVED] Node 7 received message from 8
+1.252102407102 [GOSSIP FORWARD] Node 7 -> Node 6
+1.25871379788 [GOSSIP RECEIVED] Node 5 received message from 6
+1.25871379788 [GOSSIP FORWARD] Node 5 -> Node 4
+1.26302036913 [GOSSIP RECEIVED] Node 4 received message from 3
+1.26302036913 [GOSSIP FORWARD] Node 4 -> Node 5
+1.264897317276 [GOSSIP RECEIVED] Node 0 received message from 1
+1.264897317276 [GOSSIP FORWARD] Node 0 -> Node 14
+1.268254042501 [GOSSIP RECEIVED] Node 13 received message from 12
+1.268254042501 [GOSSIP FORWARD] Node 13 -> Node 14
+1.276243874234 [GOSSIP RECEIVED] Node 1 received message from 0
+1.276243874234 [GOSSIP FORWARD] Node 1 -> Node 2
+1.276358517296 [GOSSIP RECEIVED] Node 3 received message from 4
+1.276358517296 [GOSSIP FORWARD] Node 3 -> Node 2
+1.282004808504 [GOSSIP RECEIVED] Node 8 received message from 7
+1.282004808504 [GOSSIP FORWARD] Node 8 -> Node 9
+1.289497337993 [GOSSIP RECEIVED] Node 12 received message from 13
+1.289497337993 [GOSSIP FORWARD] Node 12 -> Node 11
+1.30510467685 [GOSSIP RECEIVED] Node 2 received message from 3
+1.30510467685 [GOSSIP FORWARD] Node 2 -> Node 1
+1.305294810128 [GOSSIP RECEIVED] Node 0 received message from 1
+1.305294810128 [GOSSIP FORWARD] Node 0 -> Node 14
+1.305645734608 [GOSSIP RECEIVED] Node 0 received message from 14
+1.305645734608 [GOSSIP FORWARD] Node 0 -> Node 1
+1.313389213846 [GOSSIP RECEIVED] Node 0 received message from 1
+1.313389213846 [GOSSIP FORWARD] Node 0 -> Node 14
+1.320957280162 [GOSSIP RECEIVED] Node 11 received message from 12
+1.320957280162 [GOSSIP FORWARD] Node 11 -> Node 10
+1.324004767227 [GOSSIP RECEIVED] Node 0 received message from 14
+1.324004767227 [GOSSIP FORWARD] Node 0 -> Node 1
+1.326228830569 [GOSSIP RECEIVED] Node 2 received message from 3
+1.326228830569 [GOSSIP FORWARD] Node 2 -> Node 1
+1.326598069611 [GOSSIP RECEIVED] Node 2 received message from 1
+1.326598069611 [GOSSIP FORWARD] Node 2 -> Node 3
+1.328810245442 [GOSSIP RECEIVED] Node 10 received message from 9
+1.328810245442 [GOSSIP FORWARD] Node 10 -> Node 11
+1.329193216282 [GOSSIP RECEIVED] Node 13 received message from 12
+1.329193216282 [GOSSIP FORWARD] Node 13 -> Node 14
+1.332289918283 [GOSSIP RECEIVED] Node 5 received message from 4
+1.332289918283 [GOSSIP FORWARD] Node 5 -> Node 6
+1.334269020962 [GOSSIP RECEIVED] Node 9 received message from 8
+1.334269020962 [GOSSIP FORWARD] Node 9 -> Node 10
+1.334874009022 [GOSSIP RECEIVED] Node 11 received message from 12
+1.334874009022 [GOSSIP FORWARD] Node 11 -> Node 10
+1.343995142685 [GOSSIP RECEIVED] Node 2 received message from 1
+1.343995142685 [GOSSIP FORWARD] Node 2 -> Node 3
+1.347561716573 [GOSSIP RECEIVED] Node 12 received message from 13
+1.347561716573 [GOSSIP FORWARD] Node 12 -> Node 11
+1.351933164801 [GOSSIP RECEIVED] Node 7 received message from 6
+1.351933164801 [GOSSIP FORWARD] Node 7 -> Node 8
+1.35217050269 [GOSSIP RECEIVED] Node 3 received message from 2
+1.35217050269 [GOSSIP FORWARD] Node 3 -> Node 4
+1.353916045304 [GOSSIP RECEIVED] Node 14 received message from 13
+1.353916045304 [GOSSIP FORWARD] Node 14 -> Node 0
+1.354616137401 [GOSSIP RECEIVED] Node 7 received message from 6
+1.354616137401 [GOSSIP FORWARD] Node 7 -> Node 8
+1.35529456183 [GOSSIP RECEIVED] Node 10 received message from 9
+1.35529456183 [GOSSIP FORWARD] Node 10 -> Node 11
+1.355593492596 [GOSSIP RECEIVED] Node 10 received message from 11
+1.355593492596 [GOSSIP FORWARD] Node 10 -> Node 9
+1.356667056744 [GOSSIP RECEIVED] Node 1 received message from 2
+1.356667056744 [GOSSIP FORWARD] Node 1 -> Node 0
+1.358496076024 [GOSSIP RECEIVED] Node 6 received message from 5
+1.358496076024 [GOSSIP FORWARD] Node 6 -> Node 7
+1.359138989162 [GOSSIP RECEIVED] Node 6 received message from 7
+1.359138989162 [GOSSIP FORWARD] Node 6 -> Node 5
+1.360909653515 [GOSSIP RECEIVED] Node 5 received message from 6
+1.360909653515 [GOSSIP FORWARD] Node 5 -> Node 4
+1.367705838113 [GOSSIP RECEIVED] Node 10 received message from 11
+1.367705838113 [GOSSIP FORWARD] Node 10 -> Node 9
+1.373827947629 [GOSSIP RECEIVED] Node 5 received message from 6
+1.373827947629 [GOSSIP FORWARD] Node 5 -> Node 4
+1.376774620093 [GOSSIP RECEIVED] Node 1 received message from 2
+1.376774620093 [GOSSIP FORWARD] Node 1 -> Node 0
+1.379806849157 [GOSSIP RECEIVED] Node 3 received message from 2
+1.379806849157 [GOSSIP FORWARD] Node 3 -> Node 4
+1.38020338013 [GOSSIP SKIP] Duplicate message ignored
+1.387520948007 [GOSSIP RECEIVED] Node 14 received message from 13
+1.387520948007 [GOSSIP FORWARD] Node 14 -> Node 0
+1.390483267967 [GOSSIP RECEIVED] Node 9 received message from 10
+1.390483267967 [GOSSIP FORWARD] Node 9 -> Node 8
+1.400791755464 [GOSSIP RECEIVED] Node 0 received message from 1
+1.400791755464 [GOSSIP FORWARD] Node 0 -> Node 14
+1.400825592097 [GOSSIP RECEIVED] Node 6 received message from 7
+1.400825592097 [GOSSIP FORWARD] Node 6 -> Node 5
+1.400825592097 [TERMINATE] Node 6 received all gossip messages. Shutting down.
+1.401158193762 [GOSSIP RECEIVED] Node 10 received message from 9
+1.401158193762 [GOSSIP FORWARD] Node 10 -> Node 11
+1.402523033057 [GOSSIP RECEIVED] Node 13 received message from 12
+1.402523033057 [GOSSIP FORWARD] Node 13 -> Node 14
+1.413025154935 [GOSSIP RECEIVED] Node 8 received message from 9
+1.413025154935 [GOSSIP FORWARD] Node 8 -> Node 7
+1.416857997407 [GOSSIP SKIP] Duplicate message ignored
+1.417772735259 [GOSSIP SKIP] Duplicate message ignored
+1.421174381398 [GOSSIP RECEIVED] Node 8 received message from 7
+1.421174381398 [GOSSIP FORWARD] Node 8 -> Node 9
+1.423864705661 [GOSSIP RECEIVED] Node 1 received message from 0
+1.423864705661 [GOSSIP FORWARD] Node 1 -> Node 2
+1.427191939579 [GOSSIP RECEIVED] Node 1 received message from 0
+1.427191939579 [GOSSIP FORWARD] Node 1 -> Node 2
+1.427191939579 [TERMINATE] Node 1 received all gossip messages. Shutting down.
+1.436534302178 [GOSSIP RECEIVED] Node 3 received message from 2
+1.436534302178 [GOSSIP FORWARD] Node 3 -> Node 4
+1.437067410908 [GOSSIP SKIP] Duplicate message ignored
+1.450250880712 [GOSSIP RECEIVED] Node 11 received message from 12
+1.450250880712 [GOSSIP FORWARD] Node 11 -> Node 10
+1.451966853363 [GOSSIP RECEIVED] Node 4 received message from 5
+1.451966853363 [GOSSIP FORWARD] Node 4 -> Node 3
+1.463903865194 [GOSSIP RECEIVED] Node 14 received message from 0
+1.463903865194 [GOSSIP FORWARD] Node 14 -> Node 13
+1.468113737338 [GOSSIP RECEIVED] Node 11 received message from 10
+1.468113737338 [GOSSIP FORWARD] Node 11 -> Node 12
+1.471570843639 [GOSSIP RECEIVED] Node 7 received message from 6
+1.471570843639 [GOSSIP FORWARD] Node 7 -> Node 8
+1.471570843639 [TERMINATE] Node 7 received all gossip messages. Shutting down.
+1.475075132051 [GOSSIP RECEIVED] Node 2 received message from 1
+1.475075132051 [GOSSIP FORWARD] Node 2 -> Node 3
+1.475075132051 [TERMINATE] Node 2 received all gossip messages. Shutting down.
+1.480740151179 [GOSSIP RECEIVED] Node 4 received message from 3
+1.480740151179 [GOSSIP FORWARD] Node 4 -> Node 5
+1.482037428239 [GOSSIP RECEIVED] Node 12 received message from 11
+1.482037428239 [GOSSIP FORWARD] Node 12 -> Node 13
+1.48294849724 [GOSSIP SKIP] Duplicate message ignored
+1.483723347514 [GOSSIP SKIP] Duplicate message ignored
+1.49472556395 [GOSSIP RECEIVED] Node 14 received message from 0
+1.49472556395 [GOSSIP FORWARD] Node 14 -> Node 13
+1.496221307593 [GOSSIP SKIP] Duplicate message ignored
+1.49997574516 [GOSSIP RECEIVED] Node 13 received message from 14
+1.49997574516 [GOSSIP FORWARD] Node 13 -> Node 12
+1.511998105191 [GOSSIP RECEIVED] Node 3 received message from 4
+1.511998105191 [GOSSIP FORWARD] Node 3 -> Node 2
+1.511998105191 [TERMINATE] Node 3 received all gossip messages. Shutting down.
+1.512741805113 [GOSSIP SKIP] Duplicate message ignored
+1.515859247486 [GOSSIP RECEIVED] Node 0 received message from 1
+1.515859247486 [GOSSIP FORWARD] Node 0 -> Node 14
+1.515859247486 [TERMINATE] Node 0 received all gossip messages. Shutting down.
+1.520378847028 [GOSSIP SKIP] Duplicate message ignored
+1.520573800699 [GOSSIP SKIP] Duplicate message ignored
+1.523834718025 [GOSSIP SKIP] Duplicate message ignored
+1.525122515014 [GOSSIP SKIP] Duplicate message ignored
+1.525156510674 [GOSSIP SKIP] Duplicate message ignored
+1.526164153678 [GOSSIP RECEIVED] Node 5 received message from 6
+1.526164153678 [GOSSIP FORWARD] Node 5 -> Node 4
+1.526164153678 [TERMINATE] Node 5 received all gossip messages. Shutting down.
+1.529128767467 [GOSSIP SKIP] Duplicate message ignored
+1.529561368832 [GOSSIP RECEIVED] Node 4 received message from 3
+1.529561368832 [GOSSIP FORWARD] Node 4 -> Node 5
+1.533286234298 [GOSSIP SKIP] Duplicate message ignored
+1.548315450292 [GOSSIP RECEIVED] Node 14 received message from 13
+1.548315450292 [GOSSIP FORWARD] Node 14 -> Node 0
+1.548315450292 [TERMINATE] Node 14 received all gossip messages. Shutting down.
+1.550132971558 [GOSSIP RECEIVED] Node 8 received message from 7
+1.550132971558 [GOSSIP FORWARD] Node 8 -> Node 9
+1.550132971558 [TERMINATE] Node 8 received all gossip messages. Shutting down.
+1.552840685748 [GOSSIP SKIP] Duplicate message ignored
+1.572519160855 [GOSSIP RECEIVED] Node 4 received message from 3
+1.572519160855 [GOSSIP FORWARD] Node 4 -> Node 5
+1.572519160855 [TERMINATE] Node 4 received all gossip messages. Shutting down.
+1.581525738915 [GOSSIP RECEIVED] Node 11 received message from 10
+1.581525738915 [GOSSIP FORWARD] Node 11 -> Node 12
+1.581525738915 [TERMINATE] Node 11 received all gossip messages. Shutting down.
+1.582529677424 [GOSSIP SKIP] Duplicate message ignored
+1.582833884492 [GOSSIP SKIP] Duplicate message ignored
+1.597853918477 [GOSSIP SKIP] Duplicate message ignored
+1.611189554674 [GOSSIP SKIP] Duplicate message ignored
+1.629167075917 [GOSSIP SKIP] Duplicate message ignored
+1.632470317588 [GOSSIP RECEIVED] Node 10 received message from 11
+1.632470317588 [GOSSIP FORWARD] Node 10 -> Node 9
+1.632470317588 [TERMINATE] Node 10 received all gossip messages. Shutting down.
+1.637639499796 [GOSSIP SKIP] Duplicate message ignored
+1.644697179135 [GOSSIP SKIP] Duplicate message ignored
+1.657060576816 [GOSSIP SKIP] Duplicate message ignored
+1.658241377947 [GOSSIP SKIP] Duplicate message ignored
+1.676566309629 [GOSSIP RECEIVED] Node 13 received message from 14
+1.676566309629 [GOSSIP FORWARD] Node 13 -> Node 12
+1.676566309629 [TERMINATE] Node 13 received all gossip messages. Shutting down.
+1.679639522858 [GOSSIP RECEIVED] Node 9 received message from 8
+1.679639522858 [GOSSIP FORWARD] Node 9 -> Node 10
+1.679639522858 [TERMINATE] Node 9 received all gossip messages. Shutting down.
+1.697460575786 [GOSSIP SKIP] Duplicate message ignored
+1.701723759484 [GOSSIP SKIP] Duplicate message ignored
+1.738539295951 [GOSSIP RECEIVED] Node 12 received message from 13
+1.738539295951 [GOSSIP FORWARD] Node 12 -> Node 11
+1.738539295951 [TERMINATE] Node 12 received all gossip messages. Shutting down.
+1.757329363849 [GOSSIP SKIP] Duplicate message ignored
+1.770475314957 [GOSSIP SKIP] Duplicate message ignored
+1.900168193716 [GOSSIP SKIP] Duplicate message ignored
